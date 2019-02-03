@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   #simple route
   get 'demo/index'
-  get 'demo/hello'
+  get 'demo/hello' # demo controller -> hello action
 
   #default route may go away in future versions of rails
   #get ':controller(/:action(/:id))'
