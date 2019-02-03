@@ -8,7 +8,11 @@ class DemoController < ApplicationController
   end
 
   def hello
-    render('index') #sets the templatee
+    render('index') #sets the template (overwriting default)
+  end
+
+  def other_hello
+    redirect_to(:controller => 'demo', :action => 'index') 
   end
 
 end
