@@ -3,16 +3,19 @@ class DemoController < ApplicationController
   layout false
 
   def index
-    #default -> render('index')
-    render('hello')
+    render('index')
   end
 
   def hello
-    render('index') #sets the template (overwriting default)
+    render('hello')
   end
 
   def other_hello
-    redirect_to(:controller => 'demo', :action => 'index') 
+    redirect_to(:controller => 'demo', :action => 'index')
+  end
+
+  def lynda
+    redirect_to('http://www.lynda.com')
   end
 
 end

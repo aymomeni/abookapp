@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'demo/index'
   get 'demo/hello' # demo controller -> hello action
   get 'demo/other_hello'
+  get 'demo/lynda'
 
   #default route may go away in future versions of rails
   #get ':controller(/:action(/:id))'
