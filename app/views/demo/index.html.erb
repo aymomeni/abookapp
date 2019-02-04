@@ -1,6 +1,35 @@
-<h1>Hello world from index!</h1>
+<!Doctype html>
+<head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true%>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</head>
+<body class="container">
 
-<a href="/demo/hello">Hello page 1</a> <br />
-<%= link_to('Hello page 2', {:action => 'hello'}) %> <br />
+  <!--<a href="/demo/hello">Hello page 1</a> <br /> -->
+  <!--<%= link_to('Hello page 2', {:action => 'hello'}) %> <br /> -->
 
-<%= link_to('Hello  with parameters', {:action => 'hello', :page => 5, :id => 20}) %> <br />
+  <!-- <%= link_to('Hello  with parameters', {:action => 'hello', :page => 5, :id => 20}) %> <br /> -->
+  <!-- no additional media querie or css is required -->
+
+      <div>
+          <div class="row justify-content-center align-items-center" style="height:50vh">
+              <h1 class="col-6">Welcome to abookapp!</h1>
+              <div class="col-6">
+                  <div class="card">
+                      <div class="card-body">
+                          <form action="" autocomplete="off">
+                                <div class="form-group">
+                                  <input type="text" class="form-control" name="username">
+                                </div>
+                                <div class="form-group">
+                                  <input type="password" class="form-control" name="password">
+                                </div>
+                                <button type="button" id="sendlogin" class="btn btn-primary">login</button>
+                          </form>
+                      </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+</body>
+</html>
